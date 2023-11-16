@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Entry</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter your Diary Entry</h1>
+    <form method="post" action="/main/newentry/<%= mainid %>/new">
+        <label for="diaryDate">Select Date:</label>
+        <input required type="date" name="diaryDate"><br>
+        <label for="content">Enter your content here:</label>
+        <textarea required name="content" cols="150" rows="20"></textarea><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDiaryEntry</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello @<%= user.username %></h1>
+    <div style="display: flex; justify-content: center;">
+        <form method="post" action="/main/allentries/<%= userId %>">
+            <button type="submit">show all entries</button>
+        </form>
+        <form method="post" action="/main/newentry/<%= userId %>">
+            <button>add new entry</button>
+        </form>
+    </div>
+</body>
+</html>

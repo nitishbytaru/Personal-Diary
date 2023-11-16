@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary Entries</title>
+    <style>
+        .content{
+            margin: 0rem 2rem 0rem 2rem;
+            padding: 0rem 0rem 0rem 1rem;
+            border: solid 0.5px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <% for(content of result){ %>
+            <p><b><%= content.entrydate.toString().split(" ").slice(0,4).join(" ") %></b></p>
+            <p><%= content.content %></p>
+
+            <div style="display: flex;">
+                <form method="post" action="/main/allentries/<%= content.id %>/edit">
+                    <button type="submit">Edit</button>
+                </form> &nbsp;
+                <form method="post" action="/main/allentries/<%= content.id %>?_method=DELETE">
+                    <button type="submit">Delete</button>
+                </form> 
+            </div>
+            <hr>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Userself</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading" >
+        <h2>Welcome TO MyDiary</h2>
+        <h4>The place where you Can Document Your DAY</h4>
+    </div>
+    <div class="register-form">
+        <form class="form" method="post" style="margin-top: 0rem;" action="/registeruser" id="login-form-register" >
+            <div class="register" id="displayRegister">
+                <h2 class="heading">Register</h2>
+                <div class="register-main">
+                    <div class="username component">
+                        <label for="newUsername " class="label label-tag" >Username:</label>
+                        <input type="text" class="username label " id="newUsername" name="username"   placeholder="Enter username" required >
+                    </div>
+                    <div class="password component">
+                        <label for="newPassword" class="label label-tag" >Password:</label>
+                        <input type="password" class="password label " id="newPassword"  name="password" placeholder="Enter password" required >
+                    </div>
+                    <div class="email component">
+                        <label for="email" class="label label-tag" >Email:</label>
+                        <input type="email" class="email label " id="email" name="email"  placeholder="Enter email" required >
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="btn btn-primary" id="registerDataButton" >Register</button>
+                </div>
+                <div class="back-home">
+                    <a href="/" style="text-decoration: none;">Go back to home</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDiary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="heading" >
+        <h2>Welcome TO MyDiary</h2>
+        <h4>The place where you Can Document Your DAY</h4>
+    </div>
+    <div class="login-form">
+        <form method="post" class="form" action="/checkuser" id="login-form-login" >
+            <div class="login" id="displayLogin">
+                <h4 class="heading" >Login with Your Details</h4>
+                <div class="main">
+                    <div class="username component ">
+                        <label for="username" class="label label-tag" >Username:</label>
+                        <input type="text" name="username" class="username label " id="username"  placeholder="Enter username" required >
+                    </div>
+                    <div class="password component ">
+                        <label for="password" class="label label-tag" >Password:</label>
+                        <input type="password" name="Password" class="password label " id="password"  placeholder="Enter password" required >
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="btn btn-primary" id="loginDataButton" >Login</button>
+                    <div class="register-page">
+                        <a href="/registeruser">Create an Account</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

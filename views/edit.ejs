@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit post</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .content textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <p><b><%= user.entrydate.toString().split(" ").slice(0,4).join(" ") %></b></p>
+    <form method="post" action="/main/allentries/<%= user.id %>?_method=PATCH">
+        <div class="content">
+            <textarea name="content" cols="150" rows="20" ><%= user.content %></textarea>
+        </div>
+        <button >Update</button>
+    </form> 
+</body>
+</html>

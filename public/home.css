@@ -1,0 +1,71 @@
+
+.register{
+    display: block;
+}
+.switch{
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem;
+}
+.form{
+    margin: 2rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading{
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem; 
+    font-size: 1.2rem;
+}
+.register-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem; 
+    font-size: 1.2rem;
+}
+.label{
+    display: block;
+    width: 20rem;
+    text-align: center;
+}
+.label-tag{
+    text-align: left;
+    width: 15vw;
+}
+.successful{
+    border: none;
+    height: 6vh;
+    background-color: #4CAF50;
+    color: whitesmoke;
+    display: none;
+}
+.incorrect{
+    border: none;
+    height: 6vh;
+    background-color: #f12c2c;
+    color: whitesmoke;
+    display: none;
+}
+.component{
+    padding: 0rem 0rem 1rem 0rem;
+}
+.alerts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem ;
+}
+.register-page a{
+    text-decoration: none;
+}
